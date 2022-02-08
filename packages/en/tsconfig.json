@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // here baseUrl is set at ./src (good practive), can
+    // be set to '.'
+    "baseUrl": "./pages",
+    "paths": {
+      // Declare deps here (keep them in sync with what
+      // you defined in the package.json)
+      // PS: path are relative to baseUrl
+      "ui/*": ["../../ui/*"]
+      // if you have a barrel in ui-lib
+      // "ui": ["../../ui/index"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
